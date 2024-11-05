@@ -26,7 +26,7 @@ function cargarMas(){
                         <img src= ${recetasData[i].image} alt='' style="width: 400px; height: auto;">
                         <h3>${recetasData[i].name} </h3>
                         <p>Dificultad: ${recetasData[i].difficulty} </p>
-                        <a href="" style="font-weight: bold;" >Detalle</a>
+                        <a href="./receta.html" style="font-weight: bold; color: rgb(201, 104, 104);" >Detalle</a>
                     </article>
                 `;
             }
