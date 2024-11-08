@@ -51,7 +51,7 @@ button{
 
 .barraNav a{
     text-decoration: none;
-    color: #333;
+    color: rgba(255, 255, 255, 0.8);
 }
 
 .barraNav ul{
@@ -69,12 +69,15 @@ nav{
 }
 
 #searchForm button{
-    font-size: large;
+    font-size: smaller;
 }
 
-.subtitulo1{
+h1 {
     text-align: center;
-    padding: 3%;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 2em;
+    color: #333;
+    padding: 15px;
 }
 
 #recetas article{
@@ -82,12 +85,15 @@ nav{
 }
 
 #cargarMas{
-    margin: 15px;
+    margin: 10px;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 5%;
 }
 
 footer{
     text-align: center;
-    padding: 10px;
+    padding: 30px;
     background-color: rgba(255, 255, 255, 0.8);
 }
 
@@ -120,12 +126,7 @@ footer{
 .categoria-item:hover {
     background-color: #E0A400;
 }
-h1 {
-    text-align: center;
-    font-family: 'Shadows Into Light', cursive;
-    font-size: 2em;
-    color: #333;
-}
+
 /* MEDIA QUERIES */
 @media (min-width: 900px){
     .barraNav{

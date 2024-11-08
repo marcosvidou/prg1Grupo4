@@ -19,14 +19,14 @@ function cargarMas(){
             recetario.style.flexWrap = "wrap";
             recetario.style.justifyContent = "space-evenly";
             
-
+//
             for(let i = 0; i < recetasData.length; i++){
                 recetarioHTML += `
                     <article>
                         <img src= ${recetasData[i].image} alt='' style="width: 400px; height: auto;">
                         <h3>${recetasData[i].name} </h3>
                         <p>Dificultad: ${recetasData[i].difficulty} </p>
-                        <a href="./receta.html" style="font-weight: bold; color: rgb(201, 104, 104);" >Detalle</a>
+                        <a href="./receta.html?id=${recetasData[i].id}" style="font-weight: bold; color: rgb(201, 104, 104);"> Detalle</a> 
                     </article>
                 `;
             }
