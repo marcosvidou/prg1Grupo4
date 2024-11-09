@@ -126,6 +126,17 @@ footer{
 .categoria-item:hover {
     background-color: #E0A400;
 }
+a{
+    font-weight: bold; color: rgb(201, 104, 104);
+}
+
+img{
+    width: 400px; height: auto;
+}
+
+article{
+    margin: 10px;
+}
 
 /* MEDIA QUERIES */
 @media (min-width: 900px){
