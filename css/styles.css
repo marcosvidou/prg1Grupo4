@@ -108,9 +108,9 @@ footer{
 #listaCategorias {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     gap: 15px;
-    padding: 20px;
+    padding: 0 0 5% 7%;
 }
 .categoria-item {
     width: 80%;
@@ -126,8 +126,18 @@ footer{
 .categoria-item:hover {
     background-color: #E0A400;
 }
+
+.volver{
+    border: solid black 3px;
+    width: 145px;
+    padding: 1%;
+    margin: 5% 0 10% 10%;
+    background-color: lightcoral;
+}
+
 a{
-    font-weight: bold; color: rgb(201, 104, 104);
+    font-weight: bold; 
+    color: black;
 }
 
 img{
