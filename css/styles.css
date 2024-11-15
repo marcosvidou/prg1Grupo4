@@ -132,7 +132,7 @@ footer{
     width: 145px;
     padding: 1%;
     margin: 5% 0 10% 10%;
-    background-color: lightcoral;
+    background-color: rgb(201, 104, 104);;
 }
 
 a{
@@ -146,6 +146,25 @@ img{
 
 article{
     margin: 10px;
+}
+
+/* LOGIN */
+.formLogin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mail{
+    padding: 10px;
+}
+
+.password{
+    padding: 10px;
+}
+
+.buttonLog{
+    margin-bottom: 30px;
 }
 
 /* MEDIA QUERIES */

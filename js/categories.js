@@ -1,9 +1,3 @@
-let queryLc = location.search
-console.log(location.search);
-let queryStringObj = new URLSearchParams(queryLc)
-let categoria = queryStringObj.get("categoria")
-let categoriaaa = document.querySelector("#categoriajs")
-console.log(categoria);
 fetch('https://dummyjson.com/recipes/tags')
     .then(function (response) {
         return response.json()
@@ -19,7 +13,7 @@ fetch('https://dummyjson.com/recipes/tags')
             listaCategorias.innerHTML +=
             `
                 <ul>
-                    <li> <a href="./category.html" style="color:black;"> ${lista[i]} </a></li>
+                    <li> <a href="./category.html?category=${lista[i]}" style="color:black;"> ${lista[i]} </a></li>
                 </ul>
             `;
         }
