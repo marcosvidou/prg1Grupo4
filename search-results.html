@@ -7,10 +7,38 @@
         <link rel="stylesheet" href="./css/styles.css">
     </head>
     <body>
-        <h2 class="resultadoBusqueda"></h2>
-        <section class="search-results">
-        </section>
-        <p class="volver"><a href="./index.html">Volver a home</a></p>
+        <header>
+            <div class="logo">
+                <img src="./img/logoNuevo.jpg" alt="Logo del sitio">
+            </div>
+            
+            <section class="barraNav">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="categories.html">Categorías</a></li>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="register.html">Registro</a></li>
+                    </ul>
+                </nav>
+                <form method="GET" id="searchForm" action="./search-results.html">
+                    <input type="text" name="query" placeholder="Buscar recetas..." required minlength="3">
+                    <button type="submit">Buscar</button>
+                </form>
+            </section>
+    
+        </header>
+        
+        <main>
+            <h2 class="resultadoBusqueda"></h2>
+            <section class="search-results">
+            </section>
+            <p class="volver"><a href="./index.html">Volver a home</a></p>
+        </main>
+
+        <footer>
+            <p>Desarrollado por Franco Longinotti, Josefina Janeiro & Marcos Vidou </p>
+        </footer>
         <script src="./js/search-results.js"></script>
     </body>
 </html>

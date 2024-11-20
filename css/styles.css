@@ -131,7 +131,7 @@ footer{
     border: solid black 3px;
     width: 145px;
     padding: 1%;
-    margin: 5% 0 10% 10%;
+    margin: 5% 0 5% 3%;
     background-color: rgb(201, 104, 104);;
 }
 
@@ -153,6 +153,7 @@ article{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .mail{
@@ -165,6 +166,22 @@ article{
 
 .buttonLog{
     margin-bottom: 30px;
+}
+
+/* REGISTRO */
+.formRegistrarse{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.terminosCondiciones{
+    margin-bottom: 1%;
+}
+
+h3{
+    margin-bottom: 10%;
 }
 
 /* MEDIA QUERIES */

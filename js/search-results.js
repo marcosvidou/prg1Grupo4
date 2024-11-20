@@ -5,11 +5,11 @@ console.log(resultadoBuscador);
 let recetasList = document.querySelector(".search-results");
 recetasList.style.display = "flex";
 recetasList.style.flexWrap = "wrap";
-recetasList.style.justifyContent = "space-evenly";
+recetasList.style.justifyContent = "center";
 recetasList.style.padding = "2%";
 
 let busqueda = document.querySelector(".resultadoBusqueda");
-let texto = `Resultado de busqueda para: ${resultadoBuscador}`;
+let texto = `gResultado de busqueda para: ${resultadoBuscador}`;
 busqueda.innerHTML= texto;
 busqueda.style.padding = "2%";
 
@@ -36,7 +36,7 @@ if(resultadoBuscador){
         recetasList.innerHTML = buscadas;
 
         if(buscadas == ""){
-            recetasList.innerHTML = `No se encontro el resultado de busqueda para ${resultadoBuscador}`;
+            recetasList.innerHTML = `No se encontro el resultado de busqueda para "<strong>${resultadoBuscador}</strong>".`;
             recetasList.style.fontSize = "25px";
         }
     })
