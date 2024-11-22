@@ -80,15 +80,12 @@ h1 {
     padding: 15px;
 }
 
-#recetas article{
-    padding: 1%;
-}
-
 #cargarMas{
     margin: 10px;
     padding: 10px;
     font-size: 15px;
     border-radius: 5%;
+    
 }
 
 .recetaSola{
@@ -111,9 +108,13 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: left;
+    flex-wrap: nowrap;
     gap: 15px;
-    padding: 0 0 5% 7%;
+    padding: 3% 6%;
+    height: 100%;
+    justify-content: space-around;
 }
+
 .categoria-item {
     width: 80%;
     padding: 15px;
@@ -130,11 +131,11 @@ footer{
 }
 
 .volver{
-    border: solid black 3px;
     width: 145px;
     padding: 1%;
     margin: 5% 0 5% 3%;
-    background-color: rgb(201, 104, 104);
+    color: #7EACB5;
+    background-color: #FFF4EA;
 }
 
 a{
@@ -148,6 +149,7 @@ img{
 
 article{
     margin: 10px;
+    padding: 1%;
 }
 
 /* REGISTRO  Y LOGIN */
@@ -209,7 +211,13 @@ article{
     font-size: 0.9em;
     color: #7EACB5;
     text-decoration: underline;
-    margin-top: 15px;
+    padding-top: 5%;
+
+}
+.abajoDelBoton{
+    display: flex;
+    justify-content: center;
+    padding: 2.5%;
 }
 
 .formLogin a:hover, .formRegistrarse a:hover {
@@ -284,6 +292,10 @@ article{
     nav{
         width: 70%;
         padding: 0;
+    }
+    #listaCategorias{
+        flex-wrap: wrap;
+        height: 800px;
     }
 }
 

@@ -1,9 +1,3 @@
-/*let queryString = location.search;
-let queryStringObj = new URLSearchParams(queryString);
-let categoriaSeleccionada = queryStringObj.get("categoria");
-
-let categoriaDestacadaSection = document.querySelector("#categoriaDestacada"); */
-
 let queryString = location.search;
 let queryStringObj = new URLSearchParams(queryString);
 let category = queryStringObj.get("category");
@@ -20,9 +14,9 @@ fetch(`https://dummyjson.com/recipes/tag/${category}`)
 
         for (let i = 0; i < recetasData.length; i++) {
             recetasHTML += `
-                    <article>
-                        <h3>${recetasData[i].name}</h3>
+                    <article class= "recetaSola">
                         <img src="${recetasData[i].image}" alt="Imagen de ${recetasData[i].name}">
+                        <h3>${recetasData[i].name} </h3>
                         <p>Dificultad: ${recetasData[i].difficulty}</p>
                         <a href="./receta.html?id=${recetasData[i].id}" style="margin-bottom:10px;"> Ver Detalle </a> 
                     </article>`;

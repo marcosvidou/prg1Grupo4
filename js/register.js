@@ -20,6 +20,7 @@ formulario.addEventListener('submit', function(event) {
         esValido = true;
     } else {
         emailError.innerText = "";
+        esValido = false;
     }
 
     if (password.value == "") {
@@ -27,6 +28,7 @@ formulario.addEventListener('submit', function(event) {
         esValido = true;
     } else {
         passwordError.innerText = "";
+        esValido = false;
     }
 
     if (esValido == false){

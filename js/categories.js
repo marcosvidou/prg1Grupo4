@@ -7,7 +7,9 @@ fetch('https://dummyjson.com/recipes/tags')
 
         let lista = data;
         let listaCategorias = document.querySelector("#listaCategorias");
+        
 
+    
 
         for (let i = 0; i < lista.length; i++) {
             listaCategorias.innerHTML +=
