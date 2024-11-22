@@ -18,7 +18,7 @@ function cargarMas(){
             
             for(let i = 0; i < recetasData.length; i++){
                 recetarioHTML += `
-                    <article>
+                    <article article class="recetaSola">
                         <img src= ${recetasData[i].image} alt='' style="width: 400px; height: auto;">
                         <h3>${recetasData[i].name} </h3>
                         <p>Dificultad: ${recetasData[i].difficulty} </p>

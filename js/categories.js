@@ -13,7 +13,7 @@ fetch('https://dummyjson.com/recipes/tags')
             listaCategorias.innerHTML +=
             `
                 <ul>
-                    <li> <a href="./category.html?category=${lista[i]}" style="color:black;"> ${lista[i]} </a></li>
+                    <li> <a href="./category.html?category=${lista[i]}" style="color:black;" > ${lista[i]} </a></li>
                 </ul>
             `;
         }

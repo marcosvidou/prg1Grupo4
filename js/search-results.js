@@ -9,7 +9,7 @@ recetasList.style.justifyContent = "center";
 recetasList.style.padding = "2%";
 
 let busqueda = document.querySelector(".resultadoBusqueda");
-let texto = `gResultado de busqueda para: ${resultadoBuscador}`;
+let texto = `Resultado de busqueda para: ${resultadoBuscador}`;
 busqueda.innerHTML= texto;
 busqueda.style.padding = "2%";
 

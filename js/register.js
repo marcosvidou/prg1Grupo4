@@ -1,29 +1,35 @@
-let formulario = document.querySelector(".formRegistrarse");
+let formulario = document.querySelector(".formR");
 
 let email = document.querySelector("#email");
 let password = document.querySelector("#password");
 
-let emailError = document.querySelector(".error-email");
-let passwordError = document.querySelector(".error-password");
+let emailError = document.querySelector(".email");
+let passwordError = document.querySelector(".password");
 
-formulario.addEventListener("submit", function (event) {
-    let esValido = true;
+let mensajeEmail = "Por favor complete el campo.";
+let mensajePassword = "Por favor complete el campo.";
+emailError.style.color = "red";
+passwordError.style.color = "red";
 
-    if (email.value === "") {
-        emailError.textContent = "Por favor complete el campo.";
-        esValido = false;
+let esValido = false;
+formulario.addEventListener('submit', function(event) {
+
+    event.preventDefault();
+    if (email.value == "") {
+        emailError.innerText = mensajeEmail;
+        esValido = true;
     } else {
-        emailError.textContent = "";
+        emailError.innerText = "";
     }
 
-    if (password.value === "") {
-        passwordError.textContent = "Por favor complete el campo.";
-        esValido = false;
+    if (password.value == "") {
+        passwordError.innerText = mensajePassword;
+        esValido = true;
     } else {
-        passwordError.textContent = "";
+        passwordError.innerText = "";
     }
 
-    if (!esValido) {
-        event.preventDefault();
+    if (esValido == false){
+        this.submit();
     }
 });
