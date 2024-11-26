@@ -6,15 +6,50 @@
     text-decoration: none;
 }
 
-body{
-    background-color: #FADFA1;
- 
-}
 header {
     width: 100%;
-    background-image: url(https://png.pngtree.com/background/20210711/original/pngtree-food-festival-food-promotion-banner-poster-picture-image_1092303.jpg);
+    background-color: black;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+body{
+    background-color: #FADFA1;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 2em;
+    color: #333;
+    padding: 15px;
+}
+
+footer{
+    text-align: center;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* HOME */
+#cargarMas{
+    margin: 10px;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 5%;
+}
+
+.recetaSola{
+    border: 2px, solid, black;
+}
+
+.recetaSola img{
+    width: 300px; 
+    height: auto;
+}
+
+.recetaSola:hover{
+    background-color: orange;
 }
 
 /* LOGO */
@@ -26,8 +61,8 @@ header {
 }
 
 .logo img{
-    width: 8%;
-    height: 8%;
+    width: 75px;
+    height: 75px;
     border-radius: 100px;
     border: solid black 2px;
 }
@@ -44,9 +79,9 @@ button{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
-    padding-bottom: 30px;
-    margin: 0 3% 0 3%;
+    padding-bottom: 15px;
 }
 
 .barraNav a{
@@ -57,49 +92,21 @@ button{
 .barraNav ul{
     display: flex;
     justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
     flex-wrap: wrap;
     list-style-type: none;
     font-size: large;
     font-weight: bold;
 }
 
+.barraNav li{
+    padding-bottom: 2%;
+}
+
 nav{
     padding-bottom: 3%;
     width: 100%;
-}
-
-#searchForm button{
-    font-size: smaller;
-}
-
-h1 {
-    text-align: center;
-    font-family: 'Shadows Into Light', cursive;
-    font-size: 2em;
-    color: #333;
-    padding: 15px;
-}
-
-#cargarMas{
-    margin: 10px;
-    padding: 10px;
-    font-size: 15px;
-    border-radius: 5%;
-    
-}
-
-.recetaSola{
-    border: 2px, solid, black;
-}
-
-.recetaSola:hover{
-    background-color: orange;
-}
-
-footer{
-    text-align: center;
-    padding: 30px;
-    background-color: rgba(255, 255, 255, 0.8);
 }
 
 /* CATEGORIA */
@@ -143,10 +150,6 @@ a{
     color: black;
 }
 
-img{
-    width: 400px; height: auto;
-}
-
 article{
     margin: 10px;
     padding: 1%;
@@ -154,7 +157,7 @@ article{
 
 /* REGISTRO  Y LOGIN */
 
-.formLogin, .formRegistrarse {
+.pagLogin, .formRegistrarse {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -212,8 +215,8 @@ article{
     color: #7EACB5;
     text-decoration: underline;
     padding-top: 5%;
-
 }
+
 .abajoDelBoton{
     display: flex;
     justify-content: center;
@@ -248,13 +251,16 @@ article{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px auto;
     padding: 10px;
     background-color: #FFF4EA;
     border: 2px solid #FFC857;
     border-radius: 10px;
     max-width: 600px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#searchForm button{
+    font-size: smaller;
 }
 
 .search-container input {
@@ -282,21 +288,26 @@ article{
 
 /* MEDIA QUERIES */
 @media (min-width: 900px){
-    .barraNav{
+    .barraNav ul{
         flex-direction: row;
         justify-content: space-between;
         padding-right: 3%;
         margin: 0 2% 0 5%;
     }
 
+    .barraNav{
+        margin: 0 6% 0 6%;
+        justify-content: space-between;
+    }
+
     nav{
-        width: 70%;
+        width: 60%;
         padding: 0;
     }
+
     #listaCategorias{
         flex-wrap: wrap;
         height: 800px;
+        gap: 3%;
     }
 }
-
-
