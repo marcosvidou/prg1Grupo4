@@ -11,27 +11,28 @@ let mensajePassword = "Por favor complete el campo.";
 emailError.style.color = "red";
 passwordError.style.color = "red";
 
-let esValido = false;
+let erroresBool1 = false;
+let erroresBool2 = false;
 formulario.addEventListener('submit', function(event) {
 
     event.preventDefault();
     if (email.value == "") {
         emailError.innerText = mensajeEmail;
-        esValido = true;
+        erroresBool1 = true;
     } else {
         emailError.innerText = "";
-        esValido = false;
+        erroresBool1 = false;
     }
 
     if (password.value == "") {
         passwordError.innerText = mensajePassword;
-        esValido = true;
+        erroresBool2 = true;
     } else {
         passwordError.innerText = "";
-        esValido = false;
+        erroresBool2 = false;
     }
 
-    if (esValido == false){
+    if (erroresBool1 == false && erroresBool2 == false){
         this.submit();
     }
 });
