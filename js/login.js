@@ -10,11 +10,19 @@ formulario.addEventListener('submit', function(event){
 	if(email.value == ''){
         alert("Por favor complete el campo email");
         erroresBool = true;
-    } 
+    } else {
+        erroresBool = false;
+    }
+
     if(password.value == ''){
         alert("Por favor complete el campo contraseña");
         erroresBool = true;
+    } else {
+        erroresBool = false;
     }
+
+    console.log(erroresBool)
+
     if(erroresBool == false){
         this.submit();
     }

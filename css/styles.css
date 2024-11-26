@@ -287,6 +287,26 @@ article{
 
 
 /* MEDIA QUERIES */
+@media (min-width: 550px){
+    header{
+        background-image: url(https://png.pngtree.com/background/20210711/original/pngtree-food-festival-food-promotion-banner-poster-picture-image_1092303.jpg);
+    }
+
+    .barraNav ul{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .barraNav{
+        flex-direction: row;
+    }
+
+    #listaCategorias{
+        flex-wrap: wrap;
+        height: 800px;
+    }
+}
 @media (min-width: 900px){
     .barraNav ul{
         flex-direction: row;
